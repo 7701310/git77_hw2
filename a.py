@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 app.json.ensure_ascii = False
-name = "謝士宏" #
+name = "哈哈哈" 
 
 
 @app.get("/api/name")
