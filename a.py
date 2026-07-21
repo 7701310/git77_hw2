@@ -1,17 +1,22 @@
-# 記得先裝flask (pip install flask)
-from flask import Flask, jsonify
-
-app = Flask(__name__)
-app.json.ensure_ascii = False
-name = "謝士宏" #
+import sys
 
 
-@app.get("/api/name")
-def get_name():
-    return jsonify({
-        "name": name
-    })
+def main():
+    input = sys.stdin.readline
+
+    n = int(input())
+
+    for _ in range(n):
+        f = int(input())
+        total = 0
+
+        for _ in range(f):
+            size, animals, eco = map(int, input().split())
+            # Hint: not every value in an input record changes the premium.
+            total += size * animals * eco
+
+        print(total)
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    main()
