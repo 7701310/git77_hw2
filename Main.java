@@ -13,8 +13,7 @@ public class Main {
             int f = Integer.parseInt(reader.readLine().trim());
             long total = 0;
 
-            // Hint: one iteration should consume exactly one farm record.
-            for (int i = 0; i <= f; i++) {
+            for (int i = 0; i < f; i++) {
                 StringTokenizer tokenizer =
                         new StringTokenizer(reader.readLine());
 

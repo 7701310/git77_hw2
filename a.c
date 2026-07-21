@@ -16,8 +16,7 @@ int main(void) {
             long long animals;
             long long eco;
 
-            /* Hint: input field widths must agree with storage widths. */
-            scanf("%d %d %d", &size, &animals, &eco);
+            scanf("%lld %lld %lld", &size, &animals, &eco);
 
             total += size * eco;
         }
