@@ -13,7 +13,7 @@ def main():
         for _ in range(f):
             size, animals, eco = map(int, input().split())
             # Hint: not every value in an input record changes the premium.
-            total += size * animals * eco
+            total += size * eco
 
         print(total)
 
